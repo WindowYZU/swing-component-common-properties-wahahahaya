@@ -12,6 +12,7 @@ import java.awt.Graphics;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.WindowConstants;
+import jdk.nashorn.internal.codegen.CompilerConstants;
 
 /**
  *
@@ -36,11 +37,12 @@ public class PreferredSizeSample extends JPanel{
         //試試看改成 BorderLayout
         frame.setLayout(new FlowLayout());
         ////////////////////////
-        
         for(int i=0; i<10; i++){
             PreferredSizeSample c=new PreferredSizeSample();
             //設定 preferredSize 為 50, 50 跟 100, 100 跟 150, 150
             //觀察看看
+            c.setPreferredSize(new Dimension(50, 50));
+            
             /////////////////////////////////////////////
             frame.add(c);
         }
