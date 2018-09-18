@@ -20,7 +20,6 @@ import jdk.nashorn.internal.codegen.CompilerConstants;
  */
 public class PreferredSizeSample extends JPanel{
 int weight = this.getWidth();
-int 
     @Override
     public void paintComponent(Graphics g) {
         g.setColor(Color.BLACK);
