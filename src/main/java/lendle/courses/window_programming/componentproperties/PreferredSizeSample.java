@@ -19,7 +19,8 @@ import jdk.nashorn.internal.codegen.CompilerConstants;
  * @author lendle
  */
 public class PreferredSizeSample extends JPanel{
-
+int weight = this.getWidth();
+int 
     @Override
     public void paintComponent(Graphics g) {
         g.setColor(Color.BLACK);
@@ -34,6 +35,7 @@ public class PreferredSizeSample extends JPanel{
         JFrame frame=new JFrame();
         frame.setSize(800, 600);
         frame.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
+        
         //試試看改成 BorderLayout
         frame.setLayout(new FlowLayout());
         ////////////////////////
